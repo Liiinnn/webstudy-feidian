@@ -1,0 +1,59 @@
+#sidebar{
+    width:267px;
+    height:850px;
+    background: #fff url(/温州广厦/images/weline.gif) repeat-y right top;
+    float:left;
+}
+#sidebar embed{
+    display:block;
+    width:220px;
+    height:200px;
+    margin: 0 auto;
+    margin-top: 20px;
+    /* background: yellow; */
+}
+#content{
+    width:600px;
+    height:850px;
+    background: #fff;
+    float:right;
+}
+#content h1{
+    background: url(/温州广厦/images/Message.gif) no-repeat;
+    width:119px;
+    height:26px;
+    font-size: 100%;
+    text-indent: -9999px;
+    margin-top:20px;
+    margin-left:20px;
+}
+#content form{
+    margin-left: 20px;
+    margin-top: 10px;
+}
+#content form p{
+    padding:2px 0 2px 0;
+}
+#content form p input.text{
+    width:150px;
+    height:20px;
+    border:1px solid #ccc;
+    background: #fff;
+}
+#content form p input.submit{
+    width:70px;
+    height:20px;
+    border:1px solid #ccc;
+    background: #fff;
+    cursor:pointer;
+    color:#666
+}
+#content form p input.submit:hover{
+    background: #eee;
+}
+#content form textarea.area{
+    width:210px;
+    height:100px; 
+    border:1px solid #ccc;
+    background: #fff;
+}

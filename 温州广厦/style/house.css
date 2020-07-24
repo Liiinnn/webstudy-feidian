@@ -1,0 +1,61 @@
+#sidebar{
+    width:267px;
+    height:850px;
+    background: #fff url(/温州广厦/images/weline.gif) repeat-y right top;
+    float:left;
+}
+#sidebar embed{
+    display:block;
+    width:220px;
+    height:200px;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+
+
+#content{
+    width:600px;
+    height:850px;
+    background: #fff;
+    float:right;
+}
+#content h1{
+    background: url(/温州广厦/images/lou.gif) no-repeat;
+    width:127px;
+    height:26px;
+    font-size: 100%;
+    text-indent: -9999px;
+    margin-top:20px;
+    margin-left:20px;
+}
+#content dl{
+    width: 280px;
+    height: 182px;
+    /* background: blue; */
+    float:left;
+}
+#content dl dd{
+    width: 250px;
+    height: 150px;
+}
+#content dl dd img{
+    width: 250px;
+    height: 150px;
+    display: block;
+}
+#content dl dt{
+    width: 230px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    background: #ccc;
+    border-bottom: 1px solid orange;
+    margin-left: 24px;
+    clear:both;
+}
+#content p{
+    text-align: center;
+    padding-top: 50px;
+    clear: both;
+}

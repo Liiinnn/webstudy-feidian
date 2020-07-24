@@ -1,0 +1,52 @@
+#sidebar{
+    width:267px;
+    height:850px;
+    background: #fff url(/温州广厦/images/weline.gif) repeat-y right top;
+    float:left;
+}
+#sidebar embed{
+    display:block;
+    width:220px;
+    height:200px;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+
+
+#content{
+    width:600px;
+    height:850px;
+    background: #fff;
+    float:right;
+}
+#content h1{
+    background: url(/温州广厦/images/newsc.gif) no-repeat;
+    width:123px;
+    height:27px;
+    font-size: 100%;
+    text-indent: -9999px;
+    margin-top:20px;
+    margin-left:20px;
+}
+#content ul{
+    line-height: 200%;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+#content ul li{
+    padding-left: 15px;
+    background: url(/温州广厦/images/ico.gif) no-repeat left center;
+}
+#content ul li a{
+    text-decoration: none;
+    color:blue;
+}
+#content ul li a:hover{
+    text-decoration: underline;
+    color: lightyellow;
+}
+#content ul p{
+    text-align: center;
+    margin-top: 30px;
+}

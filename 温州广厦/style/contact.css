@@ -1,0 +1,41 @@
+#sidebar{
+    width:267px;
+    height:850px;
+    background: #fff url(/温州广厦/images/weline.gif) repeat-y right top;
+    float:left;
+}
+#sidebar embed{
+    display:block;
+    width:220px;
+    height:200px;
+    margin: 0 auto;
+    margin-top: 20px;
+    /* background: yellow; */
+}
+#content{
+    width:600px;
+    height:850px;
+    background: #fff;
+    /* background: lightblue; */
+    float:right;
+}
+#content h1{
+    background: url(/温州广厦/images/lianxi.gif) no-repeat;
+    width:89px;
+    height:25px;
+    font-size: 100%;
+    text-indent: -9999px;
+    margin-top:20px;
+    margin-left:20px;
+}
+
+#content ul{
+    line-height: 180%;
+    padding-left: 30px;
+    padding-top: 20px;
+    /* background: lightgoldenrodyellow; */
+}
+#content p{
+    text-align: center;
+    padding-top: 50px;
+}

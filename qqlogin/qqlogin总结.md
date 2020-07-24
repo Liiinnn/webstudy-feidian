@@ -1,18 +1,20 @@
 # QQlogin总结
 
-## 思想
+## 一.思想
 
 分块进行布局，可以三块也可四块。css进行布局字体等控制，html直接用css中定义的写内容。
 
----
 
 
-
-## get√
+## 二.get√
 
 ### 技巧
 
-先把每块背景全部设置为深色，方便看清所在区域，直到最后再改回正常颜色。background
+先把每块背景全部设置为深色，方便看清所在区域，直到最后再改回正常颜色。background。
+
+### 关于！
+
+在vs中输入"!"，会直接出来框架
 
 ### border
 
@@ -38,13 +40,15 @@ css中的display是设置元来素显示的方式,block是一块状元素源的�
 
 ### text-decoration
 
+```
 .header t a{
         color:#1d5494df; 
         text-decoration: none;
-    }
+   }
 .header t a:hover{
-        text-decoration: underline;
-    }
+       text-decoration: underline;
+   }
+```
 
 平时没有下划线，鼠标放上去会有下划线
 
@@ -74,11 +78,11 @@ float:left
 
 float:right
 
----
 
 
 
-## 基础
+
+## 三.基础
 
 ### height
 
@@ -113,38 +117,11 @@ font-family 字体类型
 
 ### <img src=>图片
 
-### 框架
-
-```html
-<!DOCTYPE html>
-
-<html lang="en">
 
 
-<head>
-
-<meta charset="utf-8">
-
-<title>QQright</title>
-
-<style type="text/css">
-
-</style>
-
-</head>
 
 
-<body>
-
-<div></div>
-
-</body>
-
-
-</html>
-```
-
-## 代码
+## 四.代码
 
 ```html
 <!DOCTYPE html>
@@ -558,6 +535,7 @@ font-family 字体类型
 
 
 
-## 效果图
+## 五.效果图
 
-![](D:\Git\code\webstudy-feidian\qqlogin\qqlogin.PNG)
+![](https://github.com/Liiinnn/webstudy-feidian/blob/master/qqlogin/qqlogin.PNG)
+

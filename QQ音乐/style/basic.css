@@ -1,0 +1,687 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-size: 15px;
+    /* padding-left: 354px;
+    padding-right: 345px; */
+}
+.xf{
+    position: fixed;
+    right: 45px;
+    top: 165px;
+}
+
+
+
+
+/*        */
+/* header */
+/*        */
+.header{
+    height: 140px;
+    padding-left: 354px;
+    padding-right: 345px;
+}
+/* nav1是上半部分 */
+/* nav11是图片加音乐馆到VIP */
+/* nav12是搜索框 */
+/* nav13是登录和两个按钮 */
+.header .nav1{
+    /* background: blue; */
+    height: 90px;
+    border-bottom: 1px solid rgb(240, 240, 240);
+    /* 那一根横线 */
+}
+.header .nav1 img{
+    float: left;
+}
+
+
+/* nav11*/
+/* nav111是我的音乐到VIP */
+/* nav112是音乐馆 */
+.header .nav1 .nav11{
+    float:left;
+    background: lavenderblush;
+    width: 480px;
+    height: 90px;
+    display: flex;
+    text-align: center;
+}
+.header .nav1 .nav11 .nav111{
+    flex: 1;
+    background: white;
+    text-align: center;
+    font-size: 18px;
+}
+.header .nav1 .nav11 .nav111 a{
+    color: #333;
+    text-decoration: none;
+    float: left;
+    padding-top: 30px;
+    padding-left: 9px;
+    text-align: center;
+}
+.header .nav1 .nav11 .nav111 a:hover{
+    text-decoration: none;
+    color: #31c27c;
+}
+.header .nav1 .nav11 .nav111 img{
+    float: left;
+    padding-top: 20px;
+}
+.header .nav1 .nav11 .nav112{
+    flex: 1;
+    background:#31c27c ;
+    text-align: center;
+    padding-top: 30px;
+    font-size: 18px;
+}
+.header .nav1 .nav11 .nav112 a{
+    color: white;
+    text-decoration: none;
+    padding-top: 30px;
+    text-align: center;
+}
+
+/* nav12是搜索框 */
+.header .nav1 .nav12{
+    float: left;
+}
+.header .nav1 .nav12 input{
+    margin-top: 27px;
+    margin-left: 30px;
+    width: 215px;
+    height: 35px;
+    text-indent: 10px;
+    border-radius: 4px; 
+    border: 0.5px solid;
+    border-color: #9999;
+}
+/* .header .nav1 .nav12 button{
+    padding-right: 5px;
+}
+.header .nav1 .nav12 button:before{
+    content: "\f002";
+} */
+
+/* nav13是登录和两个按钮 */
+.header .nav1 .nav13{
+    float: left;
+    display: flex;
+    justify-content: space-around;
+    font-size: 16px;
+}
+.header .nav1 .nav13 .nav131{
+    margin-left: 15px;
+    padding-top: 33px;
+}
+.header .nav1 .nav13 .nav131 a{
+    color: #333;
+    text-decoration: none;
+}
+.header .nav1 .nav13 .nav131 a:hover{
+    text-decoration: none;
+    color: #31c27c;
+}
+.header .nav1 .nav13 .nav132{
+    margin-left: 25px;
+    padding-top: 27px;
+}
+.header .nav1 .nav13 .nav132 button{
+    width: 106px;
+    height: 36px;
+    background: #31c27c;
+    border: 0;
+    color: white;
+    border-radius: 3px; 
+}
+.header .nav1 .nav13 .nav132 button:hover{
+    background:#2fb373 ;
+    cursor:pointer;
+}
+.header .nav1 .nav13 .nav133{
+    margin-left: 15px;
+    padding-top: 27px;
+}
+.header .nav1 .nav13 .nav133 button{
+    background: white;
+    width: 84px;
+    height: 36px;
+    border-radius: 3px; 
+    border: 0.5px solid;
+    border-color: #9999;
+}
+.header .nav1 .nav13 .nav133 button:hover{
+    background:rgb(219, 219, 219) ;
+    cursor:pointer;
+}
+/* nav2是下半部分 */
+.header .nav2{
+    height: 50px;
+    margin-left: 200px;
+    margin-right: 250px;
+    display:flex;
+    padding-top: 12px;
+}
+.header .nav2 .nav21{
+    flex:1;
+    text-align: center;
+}
+.header .nav2 .nav21 a{
+    color: #333;
+    text-decoration: none;
+}
+.header .nav2 .nav21 a:hover{
+    text-decoration: none;
+    color: #31c27c;
+}
+.header .nav2 .nav22{
+    flex:1;
+    text-align: center;
+}
+.header .nav2 .nav22 a{
+    color: #31c27c;
+    text-decoration: none;
+}
+
+
+
+
+
+
+
+/*          */
+/* 歌单推荐 */
+/*          */
+
+.gedan{
+    background:url(/img/bj.png);
+    height: 530px;
+    padding-left: 354px;
+    padding-right: 345px;
+}
+/* box1是上面的字 */
+/* box2是下面的图加字 */
+.box1{
+    height: 165px;
+    margin-left: 320px;
+    margin-right: 315px;
+}
+/* box11是大字 */
+.box11{
+    margin-left: 200px;
+    padding-top: 50px;
+}
+.box11 p1{
+    font-size: 33px;
+    letter-spacing: 10px;
+    font-weight: bold;
+    font-family: "黑体";
+}
+/* box12是小字 */
+.box12{
+    display:flex;
+    padding-top: 27px;
+}
+ .box121{
+    flex:1;
+    text-align: center;
+}
+ .box121 a{
+    color: #333;
+    text-decoration: none;
+}
+.box121 a:hover{
+    text-decoration: none;
+    color: #31c27c;
+}
+.box122{
+    flex:1;
+    text-align: center;
+}
+ .box122 a{
+    color: #31c27c;
+    text-decoration: none;
+}
+.box2{
+    height: 315px;
+    display: flex;
+}
+.box2 .box21{
+    flex:1;
+}
+
+
+i1{
+    display: block;
+    padding-top: 10px;
+    font-family: "微软雅黑";
+    font-size: 14px;
+}
+i1 a{
+    text-decoration: none;
+    color: black;
+}
+i1 a:hover{
+    text-decoration: none;
+    color: #31c27c;
+}
+i2{
+    color: #9999;
+    font-size: 14px;
+    display: block;
+}
+/* 两个点 */
+.box3{
+    margin-left: 575px;
+    height: 20px;
+    display: flex;
+}
+.box31{
+    background: rgb(175,175,175);
+    border-radius: 100px;
+    height: 8px;
+    width: 8px;
+    cursor: pointer;
+}
+.box32{
+    background: rgb(225,225,225);
+    border-radius: 100px;
+    height: 8px;
+    width: 8px;
+    cursor: pointer;
+    margin-left: 23px;
+}
+
+
+
+
+
+
+
+
+/*          */
+/* 新歌首发 */
+/*          */
+.xinge{
+    background:url(/img/bj.png);
+    height: 522px;
+    padding-left: 354px;
+    padding-right: 345px;
+}
+.xg1{
+    height: 170px;  
+}
+.xg11 button{
+    margin-top: 100px;
+    height: 35px;
+    width: 125px;
+    font-size: 15px;
+    float: left;
+    background:rgb(246,246,246);
+    cursor: pointer;
+    border-radius: 3px; 
+    border: 0.5px solid;
+    border-color: #9999;
+}
+.xg12{
+    float: left;
+    margin-left: 200px;
+    width: 510px;
+}
+.xg2{
+    display: flex;
+    height: 300px;
+    flex-wrap: wrap;
+}
+.xg21{
+    height: 87px;
+    width: 400px;
+    border-bottom: 1px solid rgb(240, 240, 240);
+}
+.xg21 img{
+    float: left;
+}
+.xg21 .xg211{
+    float: left;
+    margin-top: 10px;
+    margin-left: 13px;
+    width: 200px;
+}
+.xg21 .xg212{
+    float: left;
+    margin-top: 27px;
+    margin-left:40px;
+    color: #999;
+}
+.boxxg{
+    margin-top: 20px;
+    margin-left: 480px;
+    height: 20px;
+    display: flex;
+}
+
+
+
+
+
+
+
+
+/*          */
+/* 精彩推荐 */
+/*          */
+.jingcai{
+    background: url(/img/bj.png);
+    height: 411px;
+    padding-left: 354px;
+    padding-right: 345px;
+}
+.jc1{
+    margin-left: 330px;
+}
+.jc2{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+}
+.boxjc{
+    margin-top: 20px;
+    margin-left: 535px;
+    height: 20px;
+    display: flex;
+}
+
+
+
+
+
+
+
+
+/*          */
+/* 新碟首发 */
+/*          */
+.xindie{
+    background: url(/img/bj.png);
+    height: 770px;
+    padding-left: 354px;
+    padding-right: 345px;
+}
+.xd1{
+    width: 550px;
+    margin-left: 330px;
+
+    float: left;
+}
+.xd2{
+    float: left;
+    margin-top: 115px;
+    margin-left: 275px;
+}
+.xd3{
+    float: left;
+    height: 610px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+.xd3 .xd31{
+    height: 300px;
+    width: 240px;
+}
+.xd321{
+    float: left;
+    height: 450px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 10px;
+    justify-content: space-between;
+}
+.xd3 .xd32{
+    height: 300px;
+    width: 240px;
+}
+
+
+
+
+
+
+
+
+/*        */
+/* 排行榜 */
+/*        */
+.paihang{
+    background: url(/img/bj.png);
+    height: 688px;
+    padding-left: 354px;
+    padding-right: 345px;
+}
+.ph1{
+    margin-left: 330px;
+    float: left;
+}
+.ph2{
+    float: left;
+    margin-top: 75px;
+    margin-left: 480px;
+}
+.ph3{
+    float: left;
+    margin-top: 20px;
+    background: lavender;
+    width: 100%;
+    height: 520px;
+    display: flex;
+    justify-content: space-between;
+}
+.ph3 .ph31{
+    width: 230px;
+    background-color: rgb(216,123,150);
+}
+.ph311{
+    height: 100px;
+    width: 100px;
+    margin-top: 60px;
+    margin-left: 60px;
+    text-align: center;
+    border-bottom: 1px solid rgb(240, 240, 240);
+}
+i4{
+    font-size: 20px;
+    display: block;
+    color: white;
+}
+i5{
+    font-size: 25px;
+    color: white;
+}
+.ph312{
+    width: 170px;
+    height: 300px;
+    margin-left: 30px;
+    margin-top: 30px;
+}
+.ph3121{
+    margin-top: 40px;
+}
+i6{
+    display: block;
+    color: white;
+    font-family: "微软雅黑";
+}
+i7{
+    display: block;
+    color: white;
+    text-indent: 15px;
+    font-family: "微软雅黑";
+}
+.ph32{
+    width: 230px;
+    background-color: rgb(110,158,178);
+}
+.ph33{
+    width: 230px;
+    background-color: rgb(108,186,178);
+}
+.ph34{
+    width: 230px;
+    background-color: rgb(81,142,147);
+}
+.ph35{
+    width: 230px;
+    background-color: rgb(234,157,112);
+}
+
+
+
+
+
+
+
+
+/*    */
+/* MV */
+/*    */
+.mv{
+    background: url(/img/bj.png);
+    height: 655px;
+    padding-left: 354px;
+    padding-right: 345px;
+}
+
+
+
+
+
+
+/*        */
+/* footer */
+/*        */
+.footer{
+    background: #333;
+    height: 700px;
+}
+.f1{
+    
+    margin-left: 354px;
+    height: 680px;
+    width: 63%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}   
+.f1 .f11{
+   
+    height: 250px;
+    width: 390px;
+}
+.f1 .f11 .f111{
+    height: 30px;
+    width: 300px;
+    margin-top: 80px;
+    margin-left: 10px;
+    color: #999;
+}
+
+.f1 .f11 .f112{
+  
+    height: 120px;
+    width: 370px;
+    margin-top: 20px;
+    margin-left: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+.f1 .f11 .f112 .f1121{
+   
+    height: 120px;
+    width: 90px;
+}
+.f1121 img{
+    display: block;
+    margin-left: 12px;
+}
+.f1121 a{
+    color: #999;
+    margin-top: 20px;
+    text-decoration: none;
+}
+.f1121 a:hover{
+    text-decoration: none;
+    color: #31c27c;
+}
+.you{
+    margin-left: 13px;
+    font-size: 12px;
+}
+.you1{
+    margin-left: 50px;
+}
+.f113{
+    
+    width: 330px;
+    height: 120px;
+    margin-left: 10px;
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.f1131{
+    
+    width: 110px;
+    height: 30px;
+}
+.f1131 a{
+    color: #999;
+    margin-top: 20px;
+    text-decoration: none;
+}
+.f1131 a:hover{
+    text-decoration: none;
+    color: #31c27c;
+}
+
+.f1132{
+  
+    width: 130px;
+    height: 30px;
+}
+.f1132 a{
+    color: #999;
+    margin-top: 20px;
+    text-decoration: none;
+}
+.f1132 a:hover{
+    text-decoration: none;
+    color: #31c27c;
+}
+.f12{
+   
+    height: 18px;
+    width: 650px;
+    margin-left: 23%;
+    font-size: 12px;
+    display: block;
+    margin-top: 10px;
+}
+.f12 a{
+    color: #999;
+    margin-top: 20px;
+    text-decoration: none;
+}
+.f12 a:hover{
+    text-decoration: none;
+    color: #31c27c;
+}
+i9{
+    color: #999;
+    font-family: "黑体";
+}
