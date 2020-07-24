@@ -26,15 +26,21 @@
 
 ##### (1)title 标题
 
+```
 <title>QQ音乐-千万正版音乐海量无损曲库新歌热歌天天畅听的高品质音乐平台！</title>
+```
 
 ##### (2)css引入
 
+```
 <link rel="stylesheet" type="text/css" href="./style/basic.css"/>
+```
 
 ##### (3)改图标
 
+```
 <link rel="short icon" href="./img/title.ico"></link>
+```
 
 图片一定是.ico格式
 
@@ -82,6 +88,7 @@ bj.png:
 
 }
 
+```
 <div class="xg2">
     <div class="xg21"></div>
     <div class="xg21"></div>
@@ -93,6 +100,10 @@ bj.png:
     <div class="xg21"></div>
     <div class="xg21"></div>
 </div>
+```
+
+
+
 
 ##### (4)小圆圈
 
@@ -132,26 +143,30 @@ bj.png:
 
 ##### (5)导航
 
-<div class="box12">
-                <div class="box122">
-                    <a href="">为你推荐</a>
-                </div>
-                <div class="box121">
-                    <a href="">经典</a>
-                </div>
-                <div class="box121">
-                    <a href="">轻音乐</a>
-                </div>
-                <div class="box121">
-                    <a href="">九月推荐</a>
-                </div>
-                <div class="box121">
-                    <a href="">官方歌单</a>
-                </div>
-                <div class="box121">
-                    <a href="">情歌</a>
-                </div>
-            </div>
+```
+<div class="box12">
+    <div class="box122">
+        <a href="">为你推荐</a>
+    </div>
+    <div class="box121">
+        <a href="">经典</a>
+    </div>
+    <div class="box121">
+        <a href="">轻音乐</a>
+    </div>
+    <div class="box121">
+        <a href="">九月推荐</a>
+    </div>
+    <div class="box121">
+        <a href="">官方歌单</a>
+    </div>
+    <div class="box121">
+        <a href="">情歌</a>
+    </div>
+</div>
+```
+
+
 
 .box121{
 
@@ -199,9 +214,14 @@ bj.png:
 
 ##### (6)悬浮标志
 
+```
 <div class="xf">
     <img src="img/xf.png">
 </div>
+```
+
+
+
 
 .xf{
 
@@ -214,3 +234,19 @@ bj.png:
 }
 
 ![](./img/xf.png)
+
+
+
+## 三、效果图
+
+![](./img/1.png)
+
+![](./img/2.png)
+
+![](./img/3.png)
+
+![](./img/4.png)
+
+![](./img/5.png)
+
+![](./img/6.png)

@@ -537,5 +537,5 @@ font-family 字体类型
 
 ## 五.效果图
 
-![](https://github.com/Liiinnn/webstudy-feidian/blob/master/qqlogin/qqlogin.PNG)
+![](./qqlogin.PNG)
 
