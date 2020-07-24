@@ -48,7 +48,7 @@
 >
 > 交叉轴结束位置：cross end
 
-![](.\images\flex布局模型.PNG)
+![](./images/flex布局模型.PNG)
 
 ## 三、flex相关属性
 
@@ -72,7 +72,7 @@
 
 
 
-![](.\images\2.png)
+![](./images/2.png)
 
 ---
 
@@ -106,11 +106,11 @@
 
   ​	flex布局开启前：（block元素独占一行）
 
-![](.\images\flex布局开启前.PNG)
+![](./images/flex布局开启前.PNG)
 
 ​      	 flex布局开启后：
 
-![](.\images\flex布局开启后.PNG)
+![](./images/flex布局开启后.PNG)
 
 - flex-direction决定了main axis的方向，有四个取值：
   - row(默认值) 从左到右
@@ -118,7 +118,7 @@
   - column 从上往下
   - column-reverse 从下往上
 
-![](.\images\row.jpg)
+![](./images/row.jpg)
 
 ---
 
@@ -152,9 +152,9 @@
 
   
 
-  ![](.\images\justify-content.png)
+  ![](./images/justify-content.png)
 
-  ![](.\images\justify-content2.jpg)
+  ![](./images/justify-content2.jpg)
 
 ---
 
@@ -175,11 +175,11 @@
   
   - baseline：与基准线对齐,文字第一行对齐
   
-    ![](.\images\alignitems.png)
+    ![](./images/alignitems.png)
   
-    ![](.\images\alignitems-nomal.png)
+    ![](./images/alignitems-nomal.png)
   
-    ![](.\images\basline.png)
+    ![](./images/basline.png)
   
     
 
@@ -223,7 +223,7 @@ align-content决定了多行flex items在cross axis上的对齐方式：
 
 #### （2）应用在flex items上的css属性：
 
-![](.\images\3.png)
+![](./images/3.png)
 
 
 
