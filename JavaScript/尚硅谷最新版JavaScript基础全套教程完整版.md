@@ -4,19 +4,19 @@
 
 ### 1.1 起源
 
-- **诞生于：**1995年
+- **诞生于: **1995年
 
-- **作用：**处理网页中的前端验证
+- **作用： **处理网页中的前端验证
 
-- **前端验证：**检查用户输入内容是否符合一定的规则（如：用户名的长度、密码的长度、邮箱的格式等）
+- **前端验证： **检查用户输入内容是否符合一定的规则（如：用户名的长度、密码的长度、邮箱的格式等）
 
-- **发明公司：**网景公司（Netscape）Navigator浏览器    初始名：LiveScript
+- **发明公司： **网景公司（Netscape）Navigator浏览器    初始名：LiveScript
 
 - Sun公司介入  改名为：JavaScript
 
 - 微软   explorer IE1.0  JScript
 
-- **标准命名：**ECMAScript （网景公司开源后欧洲计算机协会定义）
+- **标准命名： **ECMAScript （网景公司开源后欧洲计算机协会定义）
 
   
 
@@ -30,7 +30,7 @@
 
 
 
-**完整的JavaScript包含：**ECMAScript、DOM、BOM
+**完整的JavaScript包含： **ECMAScript、DOM、BOM
 
 
 
