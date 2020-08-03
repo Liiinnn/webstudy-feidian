@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>标识符</title>
+    <script type="text/javascript">
+        /*
+         *  标识符
+         *     -在js中所有的可以由自主命名的都可以称为是标识符
+         *     -例如：变量名，函数名，属性名都属于标识符
+         *     -命名一个标识符需要遵守以下的规则：
+         *         1.标识符中可以含字母、数字、_、$
+         *         2.标识符不能以数字开头
+         *         3.标识符不能是ES中的关键字和保留字（皇上叫张三，其他所有人都不能叫张三）
+         *         4.标识符一般都采用驼峰命名法
+         *              -首字母小写，每个单词的开头字母大写，其余字母小写
+         *                  hellomyworld -> helloMyWorld
+         *                  HeLomYWOrlD 可以但没必要
+         *     -js底层保存标识符实际上是采用Unicode编码
+         *      所以理论上讲，所有utf-8中含有的内容都可以作为标识符
+         *
+         */
+        
+        //var a_@_# = 123;  报错
+        //var 1ab_c = 123;  报错
+        //var var = 123;    报错
+
+        var a_1_$_ = 123;
+
+        var 锄禾日当午 = 456;//能用，但不要这么用
+
+        console.log(a_1_$_);
+        console.log(锄禾日当午);
+    
+    </script>
+
+</head>
+
+
+
+<body>
+    
+</body>
+</html>
