@@ -440,3 +440,283 @@
     </script>
 ```
 
+
+
+## 11.强制类型转换-String
+
+```html
+<script type="text/javascript">
+    /*
+     *  强制类型转换
+     *  -指将一个数据类型强制转换为其他的数据类型
+     *  -类型转换主要是将其他数据类型转换为 
+     *      String、Number、Boolean
+     */
+
+    /*
+     * 将其他的数据类型转换为String
+     * 方式一：
+     *         -调用被转换数据类型的toString()方法,调用xxx的yyy方法就是xxx.yyy()
+     *         -该方法不会影响到原变量,他会将转换的结果返回
+     *         -但是要注意null和undefined这就两个值没有toString()方法，如果调用会报错
+     *
+     * 方式二：
+     *         -调用String函数，并将被转换的数据作为参数传递给函数
+     *         -使用String()函数做强制类型转换时，
+     *             对于Number和Boolean实际上就是调用toString()方法
+     *             但是对于null和undefined，就不会调用toString方法，他会直接将null直接转换为“null”，将undefined直接转换为“undefined”
+     */
+
+    //方法一：
+    var a = 123;
+    var b = a.toString();//调用a的toString()方法，a不变
+    console.log(typeof a);
+    console.log(a);
+    console.log(typeof b);
+    console.log(b);
+
+    a = a.toString();//a变了
+    console.log(typeof a);
+    console.log(a);
+
+    a = true;
+    a = a.toString();
+    console.log(typeof a);
+    console.log(a);
+    
+    a = null;
+    //a = a.toString();  报错
+
+    a = undefined;
+    //a = a.toString();  报错
+
+    //方法二：
+    a = 123;    
+    a = String(a);
+    console.log(typeof a);
+    console.log(a);
+
+    a = true;    
+    a = String(a);
+    console.log(typeof a);
+    console.log(a);
+
+    a = null;    
+    a = String(a);
+    console.log(typeof a);
+    console.log(a);
+
+    a = undefined;    
+    a = String(a);  
+    console.log(typeof a);
+    console.log(a);
+
+</script>
+```
+
+
+
+**a = a.toString()**:
+
+|     a     | typeof a  | a = a.toString()后a | typeof a |
+| :-------: | :-------: | :-----------------: | :------: |
+|    123    |  Number   |        "123"        |  String  |
+|   true    |  Boolean  |       "true"        |  String  |
+|   null    |   Null    |        报错         |          |
+| undefined | Undefined |        报错         |          |
+
+
+
+**a = String(a)**:
+
+|     a     | typeof a  | a = String(a)后a | typeof a |
+| :-------: | :-------: | :--------------: | :------: |
+|    123    |  Number   |      "123"       |  String  |
+|   false   |  Boolean  |     "false"      |  Srting  |
+|   null    |   Null    |      "null"      |  String  |
+| undefined | Undefined |   "undefined"    |  String  |
+
+
+
+## 12.强制类型转换-Number
+
+```html
+<script type="text/javascript">
+    /*
+     *  将其他类型的数据转换为Number
+     *      转换方式一：
+     *          使用Number函数
+     *              -字符串 --> 数字
+     *                  1.如果是纯数字字符串，则直接将其转换为数字
+     *                  2.如果字符串中有非数字内容，则转换为NaN
+     *                  3.如果字符串是一个空串或者全是空格的字符串，则转换为0
+     *              -布尔 --> 数字
+     *                  true --> 1
+     *                  false --> 0
+     *              -Null --> 数字   0
+     *              -Undefined --> 数字  NaN
+     *      
+     *      转换方式二：
+     *          -这种方式专门用来对付字符串
+     *          -parseInt() 把一个字符串转换为一个整数
+     *          -parseFloat() 把一个字符串转换为一个小数
+     *          -如果对非String使用parseInt()或者parseFloat()
+     *              他会先将其转换为string，然后再操作
+     *
+     */
+    var a = "123";
+    a = Number(a);
+    console.log(typeof a);
+    console.log(a);
+    
+    a = true;    
+    a = Number(a);
+    console.log(typeof a);
+    console.log(a);
+
+    a = null;    
+    a = Number(a);
+    console.log(typeof a);
+    console.log(a);
+
+    a = undefined;    
+    a = Number(a); 
+    console.log(typeof a);
+    console.log(a);
+
+    a = "123px";
+    a = parseInt(a);
+    console.log(typeof a);
+    console.log(a);
+    //parseInt()可以将一个字符串中的有效的整数内容取出来然后转换为Number
+    //可以利用parseInt来取整
+
+    a = "123.456px";
+    a = parseFloat(a);
+    console.log(typeof a);
+    console.log(a);
+    //parseFloat()作用和parseInt类似，不同的是它可以获取有效的小数    
+         
+        
+    </script>
+```
+
+
+
+**Number()函数**：
+
+|      a      | typeof a  | a = Number(a)后a | typeof a |
+| :---------: | :-------: | :--------------: | :------: |
+|    "123"    |  String   |       123        |  Number  |
+|   "123px"   |  String   |       NaN        |  Number  |
+| ""或者"   " |  String   |        0         |  Number  |
+|    true     |  Boolean  |        1         |  Number  |
+|    false    |  Boolean  |        0         |  Number  |
+|    null     |   Null    |        0         |  Number  |
+|  undefined  | Undefined |       NaN        |  Number  |
+
+
+
+**parseInt()函数 **：
+
+|      a      | typeof a  | a = parseInt(a)后a | typeof a |
+| :---------: | :-------: | :----------------: | :------: |
+|    "123"    |  String   |        123         |  Number  |
+| "547abc89"  |  String   |        547         |  Number  |
+| "123.456px" |  String   |        123         |  Number  |
+|  "abc123"   |  String   |        NaN         |  Number  |
+|    true     |  Boolean  |        NaN         |  Number  |
+|    false    |  Boolean  |        NaN         |  Number  |
+|    null     |   Null    |        NaN         |  Number  |
+|  undefined  | Undefined |        NaN         |  Number  |
+
+
+
+**parseFloat()函数**：
+
+|      a       | typeof a  | a = parseFloat(a)后a | typeof a |
+| :----------: | :-------: | :------------------: | :------: |
+|  "123.456"   |  String   |       123.456        |  Number  |
+|  "12.37.45"  |  String   |        12.37         |  Number  |
+| "123.45abc"  |  String   |        123.45        |  Number  |
+| "abc123.456" |  String   |         NaN          |  Number  |
+|     true     |  Boolean  |         NaN          |  Number  |
+|    false     |  Boolean  |         NaN          |  Number  |
+|     null     |   Null    |         NaN          |  Number  |
+|  undefined   | Undefined |         NaN          |  Number  |
+
+
+
+
+
+
+
+## 13.其他进制的数字
+
+```html
+<script type="text/javascript">
+    
+    /*
+     *  在js中，如果需要表示16进制的数字，则需要以0x开头
+     *          如果需要表示8进制的数字，则需要以0开头
+     *          如果需要表示2进制的数字，则需要以0b开头，但是不是所有浏览器都支持
+     */
+    
+    var a = 123;
+    a = 0xff;   //16进制
+    a = 070;    //8进制
+    a = 0b10;   //2进制
+
+
+    a = "070";
+    a = parseInt(a);
+    //像“070”这种字符串，有些浏览器会当成8进制解析，有些会当成10进制解析
+    
+    a = parseInt(a,10);
+    //可以在paseInt()中传递第二个参数，用来指定数字的进制
+    
+</script>
+```
+
+
+
+
+
+## 14.转换为Boolean
+
+```html
+<script type="text/javascript">
+    /*
+     *  将其他的数据类型转换为Boolean
+     *      -使用Boolean()函数
+     *          -数字 --> Boolean   除了0和NaN，其余都是true
+     *          -字符串 --> Boolean     除了空串，其余都是true
+     *          -Null --> Boolean    false
+     *          -Undefined --> Boolean   false
+     *			-对象 --> Boolean  true
+     */
+    
+    var a = 123;    //true
+    a = -123;   //true
+    a = 0;  //false
+    a = Infinity;   //true
+    a = NaN;    //false
+
+    a = "hello";    //true
+    a = "false";    //true
+    a = "哈哈";     //true
+    a = "";         //flase
+    a = "   ";      //true
+
+    a = Boolean(a);
+    console.log(typeof a);
+    console.log(a);
+
+    </script>
+```
+
+
+
+
+
+## 15.算数运算符

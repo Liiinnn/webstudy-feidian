@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+    /*
+     *  将其他的数据类型转换为Boolean
+     *      -使用Boolean()函数
+     *          -数字 --> Boolean   除了0和NaN，其余都是true
+     *          -字符串 --> Boolean     除了空串，其余都是true
+     *          -Null --> Boolean    false
+     *          -Undefined --> Boolean   false
+     *          -对象 --> Boolean  true
+     */
+    
+    var a = 123;    //true
+    a = -123;   //true
+    a = 0;  //false
+    a = Infinity;   //true
+    a = NaN;    //false
+
+    a = "hello";    //true
+    a = "false";    //true
+    a = "哈哈";     //true
+    a = "";         //flase
+    a = "   ";      //true
+
+    a = Boolean(a);
+    console.log(typeof a);
+    console.log(a);
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
