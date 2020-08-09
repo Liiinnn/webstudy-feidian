@@ -617,7 +617,7 @@
 
 
 
-**parseInt()函数 **：
+**parseInt()函数**：
 
 |      a      | typeof a  | a = parseInt(a)后a | typeof a |
 | :---------: | :-------: | :----------------: | :------: |
